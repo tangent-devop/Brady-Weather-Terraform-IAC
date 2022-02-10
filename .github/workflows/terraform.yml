@@ -1,7 +1,9 @@
 name: 'Terraform GitHub Actions'
 on:
    pull_request:
-   push: 'dev'
+   push: 
+     branches:
+       - 'dev'
 jobs:
   terraform:
     name: 'Terraform Init'
